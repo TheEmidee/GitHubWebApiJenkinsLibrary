@@ -2,6 +2,8 @@
 
 package githubwebapi;
 
+import groovy.json.JsonSlurper;
+
 def getGitHubPRInfos( github_token ) {
     branch_name = env.GIT_BRANCH
     if (env.BRANCH_NAME != null) {
